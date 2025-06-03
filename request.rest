@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJHaWxhbmciLCJlbWFpbCI6IkdpbGFuZzFAZ21haWwuY29tIiwiaWF0IjoxNzQ4ODk2NTc1LCJleHAiOjE3NDg4OTY1OTV9.VVKSz-lY4gXlWSpNQbIHGZPeAyuZ5QJgi4dcUMwPZjw
+
+### regist
+POST http://localhost:5000/users
+content-type: application/json
+
+{
+    "name": "Gilang",
+    "email": "Gilang1@gmail.com",
+    "password" : "123456",
+    "confirmPassword": "123456"
+
+}
+
+### login
+POST http://localhost:5000/login
+content-type: application/json
+
+{
+    "email": "Gilang1@gmail.com",
+    "password" : "123456"
+}
+
+### token
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
